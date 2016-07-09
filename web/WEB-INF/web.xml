@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <context-param>
+        <description>contiene la direccion donde se buscara el 
+            servidor LDAP o activeDirectory
+        </description>
+        <param-name>servidor</param-name>
+        <param-value>ldap://10.10.10.10:389</param-value>
+    </context-param>
+    <context-param>
+        <description>la forma en la que se autenticara al ldap</description>
+        <param-name>tipoAutenticacion</param-name>
+        <param-value>simple</param-value>
+    </context-param>
+    <context-param>
+        <description>el nombr del dominio del del usuario</description>
+        <param-name>dominio</param-name>
+        <param-value>dominio</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>
