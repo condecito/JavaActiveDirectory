@@ -6,13 +6,9 @@
 package activeDirectory.security;
 
 import java.util.Hashtable;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.naming.Context;
-import javax.naming.NamingException;
 import javax.naming.directory.DirContext;
 import javax.naming.directory.InitialDirContext;
-import javax.websocket.server.PathParam;
 
 /**
  *
