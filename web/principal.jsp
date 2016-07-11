@@ -17,7 +17,7 @@
     if (!usuario.equals("") && !pass.equals("")) {
         seguridadActiveDirectory AcDirectory = new seguridadActiveDirectory();
         String servidor = getServletContext().getInitParameter("servidor");
-        String dn = usuario.toUpperCase()+"@"+dominio;  //"CN=Person,CN=Schema,CN=Configuration,DC="+dominio+",DC=HN";//dominio + "\\" + usuario;//se construlle con el dominio\\usuario CN=Person,CN=Schema,CN=Configuration,DC=PATH-II,DC=HN
+        String dn = usuario.toUpperCase()+"@"+dominio;    //"CN=Person,CN=Schema,CN=Configuration,DC="+dominio+",DC=HN";//dominio + "\\" + usuario;//se construlle con el dominio\\usuario CN=Person,CN=Schema,CN=Configuration,DC=PATH-II,DC=HN
         String tipoAutenticacion = getServletContext().getInitParameter("tipoAutenticacion");
         AcDirectory.autenticarUsuario(usuario, pass, servidor, dn, tipoAutenticacion);
         if (AcDirectory.isAtenticado()) {
