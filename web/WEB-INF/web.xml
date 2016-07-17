@@ -15,9 +15,33 @@
     <context-param>
         <description>el nombr del dominio del del usuario</description>
         <param-name>dominio</param-name>
-        <param-value>PATH-II.HN</param-value>
+        <param-value>PATH-II</param-value>
+    </context-param>
+    <context-param>
+        <description>usuario para la base de Mysql</description>
+        <param-name>mySqlUser</param-name>
+        <param-value>mySqlUser</param-value>
+    </context-param>
+    <context-param>
+        <description>mySqlClave</description>
+        <param-name>mySqlClave</param-name>
+        <param-value>mySqlClave</param-value>
+    </context-param>
+    <context-param>
+        <param-name>mySqldireccionIP</param-name>
+        <param-value>mySqldireccionIP</param-value>
+    </context-param>
+    <context-param>
+        <description>mySqlPuerto</description>
+        <param-name>mySqlPuerto</param-name>
+        <param-value>mySqlPuerto</param-value>
+    </context-param>
+    <context-param>
+        <description>mySqlBD</description>
+        <param-name>mySqlBD</param-name>
+        <param-value>mySqlBD</param-value>
     </context-param>
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
-</web-app>
+    </web-app>
